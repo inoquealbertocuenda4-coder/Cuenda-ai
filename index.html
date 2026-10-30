@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CUENDA AI</title>
+<style>
+body {
+  background: #101827;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+  padding: 30px;
+}
+h1 { color: #00d5ff; }
+input {
+  padding: 14px;
+  width: 85%;
+  border-radius: 10px;
+  border: none;
+}
+button {
+  padding: 13px 25px;
+  background: #00bfff;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+</style>
+</head>
+<body>
+<h1>CUENDA AI</h1>
+<p>O teu assistente inteligente</p>
+<input id="pergunta" placeholder="Escreva a sua pergunta...">
+<br>
+<button onclick="responder()">Enviar</button>
+<p id="resposta"></p>
+
+<script>
+function responder() {
+ let pergunta = document.getElementById("pergunta").value;
+ document.getElementById("resposta").innerText =
+ "Obrigado por usar o CUENDA AI! A tua pergunta foi: " + pergunta;
+}
+</script>
+</body>
+</html>
